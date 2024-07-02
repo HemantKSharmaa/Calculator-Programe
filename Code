@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class calculator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter First Number: ");
+        double num1 = sc.nextDouble();
+
+        System.out.println("Enter Second Number: ");
+        double num2 = sc.nextDouble();
+
+        double sum = num1+num2;
+        double product = num1*num2;
+        double substract = num1 - num2;
+        double devide = num1/num2;
+        double reminder = num1%num2;
+
+
+        System.out.println("Please select the operator from below list:- ");
+        System.out.println("01. Addition");
+        System.out.println("02. Substraction");
+        System.out.println("03. Product");
+        System.out.println("04. Quotient");
+        System.out.println("05. Reminder");
+
+        int option = sc.nextInt();
+
+        switch(option){
+            case 1:
+                System.out.println("Addition of both the number is: "+sum);
+                break;
+
+            case 2:
+                System.out.println("Substraction of both the number is: " +substract);
+                break;
+
+            case 3:
+                System.out.println("Product of both the number is: " +product);
+                break;
+
+            case 4:
+                System.out.println("Quotient of both the number is: " +devide);
+                break;
+
+            case 5:
+                System.out.println("Reminder of both the number is: " +reminder);
+                break;
+
+            default:
+                System.out.println("Invalid option!!");
+                System.out.print("Please Run the  code again");
+                break;
+
+        }
+
+    }
+}
